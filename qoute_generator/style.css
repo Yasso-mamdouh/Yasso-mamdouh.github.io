@@ -1,0 +1,311 @@
+@font-face {
+    font-family: Carlito;
+    src: url(./Carlito/Carlito-Regular.ttf);
+    font-family: Anton;
+    src: url(./Anton/Anton-Regular.ttf);
+    font-family: Mali;
+    src: url(./Mali/Mali-Regular.ttf)
+}
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: carlito, 'sans serif', 'lucida sans', 'Gill Sans MT'; 
+}
+:root{
+    --personFont: Anton;
+    --titleFont: Carlito;
+    --qouteFont: Mali;
+    --personColor: #24e95fd8;
+    --personBgColor: #3355;
+    --qouteColor: #000;
+    --qouteBgColor: #fff;
+    --titleColor: #5533;
+    --titleBgColor: #90ee90;
+}
+#test{
+    color: #7e0d55;
+    
+}
+html { 
+  background: url(./images/light-sky.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+   
+@media only screen and (min-width: 360px) and (max-width: 1251px)
+{
+     main{
+        /* margin-top: 80px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        justify-items: center;
+        height: 100%;
+        padding: 5vh 5vw;
+    }
+    /* include: header , qoute_content */
+    .container{   
+       /*  border: thin solid lime; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90vh;
+        /* gap: 5vh; */
+        
+    }
+    header h1{
+        font: 500 2rem var(--titleFont);
+        text-align: center;
+        padding: 1vh 2vw;
+        margin: 0 auto;
+        width: 65vw;
+        border: 2px solid black;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        color: lightblue;
+        background-color: black;
+        box-shadow: -4px 4px 8px;
+       
+
+    }
+   /* include: upper, qoute, button */
+    .qoute_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        height: 75vh;
+    }
+    .upper{
+        /* border: thin solid yellow; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+    .photo{
+        width: 60vw;
+        /* border: thin solid yellow; */
+        height: 25vh;
+        border: 1.2px solid;
+    }
+    .photo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .caption{
+        width: 80vw;
+        margin-bottom : 1vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    #person_name{
+        font: 400 1.5rem var(--personFont);
+        letter-spacing: 0.1em;
+        padding: 0 3vw;
+        text-align: center;
+    }
+    #person_title{
+        font: 500 1.2rem var(--titleFont);
+        padding: 0 3vw;
+        max-width: 85%;
+        text-align: center;
+        /* border: thin solid black; */
+    }
+    .qoute{
+        /* width: 80vw; */
+        height: fit-content;
+        padding: 2vh 2vw;
+        background-color: rgba(255, 255, 255, 35%);
+        text-align: center;
+        border: 2px solid mintcream;
+        max-height: 30vh;
+    }
+    .qoute_entity{
+        font: 500 1.2rem var(--personFont);
+
+    }
+    #person_qoute{
+        font: 500 1.2rem var(--qouteFont);    
+    }
+
+    button{
+        width: 50vw;
+        border: 2px solid black;
+        font: 400 1.5rem var(--titleFont);
+        height: 5vh;
+        outline: none;
+        background-color: black;
+        color: mintcream;
+        letter-spacing: 0.05em;
+        transition: 0.5s;
+        margin-top: 5vh;
+        cursor: pointer;
+    }
+    button:hover{
+        letter-spacing: 0.2em;
+        background-color: rgba(255, 255, 255, 35%);
+        color: #333;
+        border: 2px solid mintcream;
+
+
+    }
+ 
+}
+
+
+@media only screen and (min-width: 1252px) and (max-width: 1600px)
+{
+   
+    main{
+            /* margin-top: 80px; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            justify-items: center;
+            padding: 2vh 2vw;
+            width: 40vw;
+            margin: 30px auto 0 auto;
+            /* border: thin solid lime; */
+    }
+    /* container include: header , qoute_content */
+     .container{   
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90vh;
+        gap: 5vh;
+        /* border: 1px solid ; */
+        
+    }
+    /* header{
+        border: thin solid orange;
+    } */
+    header h1{
+       font: 500 2rem var(--titleFont);
+        text-align: center;
+        padding: 1vh 2vw;
+        margin: 0 auto;
+        width: 20vw;
+        border: 2px solid black;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        color: lightblue;
+        background-color: black;
+        box-shadow: -4px 4px 8px darkgray;
+    
+    }
+
+    /* qoute_content include: upper , qoute , button */
+    .qoute_content{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        gap: 5vh;
+        height: 75vh;
+        position: relative;
+        width: calc(40vw - 2vw);
+        /* border: thin solid orange; */
+    }
+    .upper{
+        display: flex;
+        gap: 1vw;
+        width: 35vw;
+        background-color: mintcream;
+        /* border: thin solid red; */
+    }
+    .photo{
+        width: 18vw;
+        /* border: thin solid yellow; */
+        height: 40vh;
+        border: 2px solid;
+    }
+    .photo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .caption{
+        /* position: absolute; */
+        /* left: 25vw; */
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+        justify-content: center;
+        padding: 2vh 2vw;
+        /* border: thin solid yellow; */
+    }
+    #person_name{
+        font: 500 1.9rem var(--personFont);
+        letter-spacing: 0.1em;
+        text-align: center;
+        padding: 1vh 1vw;
+        /* border: thin solid lime; */
+    }
+    #person_title{
+        font: 300 1.3rem var(--titleFont);
+        max-width: 35vw;
+        text-align: center;
+        /* border: thin solid lime; */
+    }
+    .qoute{
+        
+        width: 35vw;
+        bottom: 15vh;
+        height: fit-content;
+        padding: 2vh 2vw;
+        background-color: rgba(255, 255, 255, 35%);
+        text-align: center;
+        border: 2px solid mintcream;
+        max-height: 30vh;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .qoute_entity{
+        font: 500 1.2rem var(--personFont);
+
+    }
+    #person_qoute{
+        font: 500 1.3rem var(--qouteFont);    
+    }
+
+    button{
+        width: 14vw;
+        border: 2px solid black;
+        font: 400 1.5rem var(--titleFont);
+        height: 6vh;
+        outline: none;
+        background-color: black;
+        color: mintcream;
+        letter-spacing: 0.05em;
+        transition: 0.5s;
+        justify-content: flex-end;
+        cursor: pointer;
+        /* clear: left; */
+    }
+    button:hover{
+        letter-spacing: 0.2em;
+        background-color: rgba(255, 255, 255, 35%);
+        color: #333;
+        border: 2px solid mintcream;
+
+
+    }
+ 
+}
+
+ 
