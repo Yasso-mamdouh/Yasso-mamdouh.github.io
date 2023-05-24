@@ -2,9 +2,9 @@
     font-family: Carlito;
     src: url(./assets/Carlito-Regular.ttf);
     font-family: Anton;
-    src: url(./assetsAnton-Regular.ttf);
+    src: url(./assets/Anton-Regular.ttf);
     font-family: Mali;
-    src: url(./assetsMali-Regular.ttf)
+    src: url(./assets/Mali-Regular.ttf)
 }
 *{
     box-sizing:border-box;
